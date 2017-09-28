@@ -1,5 +1,5 @@
 <div>
   <h1>Welcome to {{title}}!</h1>
-  <label><input [(ngModel)]="title"></label>
+  <label><input (ngModelChange)="changeTitle($event)" [ngModel]="title"></label>
   <button (click)="resetTitle()">reset button</button>
 </div>
